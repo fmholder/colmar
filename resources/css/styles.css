@@ -1,8 +1,8 @@
 :root{              /* Whole page colors */
-    --primary-color: white;
-    --hover-color: lightgrey;
-    --accent-color: #f3efefff;
-    --text-color: #354058;
+    --text-color: #4a4a4a;  
+    --mediumGrey-color: #d8d8d8;
+    --lightGrey-color: #eaebec;
+    --background-color: #f3f5f5;
   }
 
 html {
@@ -12,9 +12,8 @@ html {
 
 body {
     text-align: center;
-    color:var(--text-color);
-    background-color: white;
-}
+    color: var(--text-color);
+    background-color: var(--background-color--);
 
 a {
     color:var(--text-color);
@@ -23,15 +22,17 @@ a {
 
 .container {
     display: flex;
-    border: 3px solid red;   /*just for editing purpose*/
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;        /* go up and down? */
+/*------------------------EDITING PURPOSE ONLY*/border: 2px solid red;
 }
-.container2 {
-    display: flex;
-    border: 3px solid limegreen;   /*just for editing purpose*/
+.horiz {
+  flex-flow: nowrap;        /* horizontal? */
 }
 
 img {
-    height: 100px;		/*this too*/
+/*------------------------EDITING PURPOSE ONLY*/height: 100px;
 }
 
 
@@ -47,15 +48,13 @@ nav {
 
   nav ul{   /*real box to play in */
     display: flex;
-    background-color: var(--accent-color);
-    align-items: flex-end;
-    background-color: var(--accent-color);
-    border-bottom: 1px solid var(--text-color);
-    height: 2rem;
+    align-items: center;
+    height: 4rem;
     padding: 0 1px;  
     font-size: 1rem;
-    margin: 0;
-  }
+    padding: 0rem 1.5rem;
+    }
+
   nav li{    
     display: inline-block;
     margin: 0 0.5rem;  /* top and bottom | left and right */
@@ -63,9 +62,16 @@ nav {
   nav .home-li{
     margin-right: auto;
   }
-  .align-icon{
+  nav .align-icon{
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap;
+    border: 3px solid red;
+  }
+  #icon {
+    height: 2rem;
+    width: auto;
   }
   nav a{
     display: flex;
@@ -80,3 +86,38 @@ nav {
     border-bottom: 2px solid var(--text-color);
   }
 
+  .iconName {
+      z-index: 99;
+  }
+
+/*-- Jumbotron Section --*/
+.jumbotron {
+  background-color: var(--mediumGrey-color);
+}
+
+/*-- Highlighted Articles Section --*/
+.highlighted_articles {
+}
+
+
+/*-- Available Classes Section --*/
+.available_classes {
+  background-color: var(--lightGrey-color);
+  
+}
+
+.six_classes {
+  flex-flow: row wrap;
+}
+
+
+/*-- Thesis Exhibit Section --*/
+.thesis_exhibit {
+  
+}
+
+
+
+#footbar {
+  border-top: 1px solid var(--text-color);
+}
