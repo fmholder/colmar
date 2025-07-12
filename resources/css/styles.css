@@ -1,15 +1,82 @@
+:root{              /* Whole page colors */
+    --primary-color: white;
+    --hover-color: lightgrey;
+    --accent-color: #f3efefff;
+    --text-color: #354058;
+  }
+
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
+body {
+    text-align: center;
+    color:var(--text-color);
+    background-color: white;
+}
 
-.container{
+a {
+    color:var(--text-color);
+    text-decoration: none;
+}
+
+.container {
     display: flex;
     border: 3px solid red;   /*just for editing purpose*/
 }
-
+.container2 {
+    display: flex;
+    border: 3px solid limegreen;   /*just for editing purpose*/
+}
 
 img {
     height: 100px;		/*this too*/
 }
+
+
+/*--Navigation bar and menu--*/
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  padding: 0rem 0rem;
+  font-size: 1rem;
+  color: var(--text-color--);
+}
+
+  nav ul{   /*real box to play in */
+    display: flex;
+    background-color: var(--accent-color);
+    align-items: flex-end;
+    background-color: var(--accent-color);
+    border-bottom: 1px solid var(--text-color);
+    height: 2rem;
+    padding: 0 1px;  
+    font-size: 1rem;
+    margin: 0;
+  }
+  nav li{    
+    display: inline-block;
+    margin: 0 0.5rem;  /* top and bottom | left and right */
+  }
+  nav .home-li{
+    margin-right: auto;
+  }
+  .align-icon{
+    display: flex;
+    align-items: flex-end;
+  }
+  nav a{
+    display: flex;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background-color 150ms ease;
+  }
+  nav a:hover{
+    background-color: var(--hover-color);
+  }
+  nav a.active-link{
+    border-bottom: 2px solid var(--text-color);
+  }
+
