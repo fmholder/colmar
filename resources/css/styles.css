@@ -4,8 +4,9 @@
     --lightGrey-color: #eaebec;
     --background-color: #ffffff;
   }
+
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
 body {
@@ -23,16 +24,18 @@ body {
   padding-left: 1rem;
 }
 a {
-  color:var(--text-color);
   text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6fa6e6;
 }
 h1 {
   font-size: 2.5rem;
   font-weight: 800;
 }
 h2 {
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 2.7rem;
+  font-weight: 750;
   padding-top: 2rem;
   margin: 0;
 }
@@ -41,12 +44,12 @@ h3 {
   font-weight: 700;
 }
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 h5 {
-  font-size: 1.0rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 .container {
@@ -171,10 +174,6 @@ nav {
   margin: 0rem;
   padding: 1rem 0rem 1rem 1rem;
 }
-.article a {
-  color: #6fa6e6;
-  font-weight: 600;
-}
  .grey_background {
   background-color: var(--mediumGrey-color);
  }
@@ -186,21 +185,20 @@ nav {
 }
 .six_classes {
   flex-flow: row wrap;
-  column-gap: 2rem;
   row-gap: 2rem;
+  column-gap: 2rem;
   margin: 0;
   padding: 2rem 4.5rem;
+  align-items: flex-start;
 }
 .class_box {
   background-color: var(--background-color);
-  flex-grow: 1;
-  min-width: 16rem;
-  max-width: 16rem;
-  max-height: 17.5rem;
-  min-height: 17.5rem;
-  display: flex;
+  min-width: 29%;
+  max-width: 29%;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-bottom: 1.5rem;
+  align-self: stretch;
 }
 .class_box img {
   width: 100%;
@@ -243,8 +241,12 @@ footer .text {
   display: flex;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   padding-bottom: 1rem;
+}
+h4 {
+  font-size: 1.75rem;
+  font-weight: 600;
 }
 .horiz {
   display: flex;
@@ -253,7 +255,6 @@ h2 {
   margin: 0;
   justify-content: flex-start;
 }
-
 
 /* --Nav bar-- */
 #company_link {
@@ -281,7 +282,7 @@ nav ul{
   flex-shrink: 0;
   width: 100%;
   padding: 0;
-
+  padding-bottom: 1.5rem;
 }
 .sixty_percent_box .text {
   padding-left: 1rem;
@@ -296,18 +297,25 @@ nav ul{
   background-color: #9b9b9b;
 }
 .forty_percent_box {
-  min-width: 100%
+  min-width: 100%;
+  padding-bottom: 3rem;
 }
 
 /* --Articles-- */
 .article {
   min-width: 100%;
   padding-bottom: 4rem;
+  align-items: flex-start;
 }
 .article img {
   height: 12.75rem;
   width: auto;
 }
+.art_info {
+  padding-left: 1rem;
+  min-width: 90%;
+}
+
 .grey_background {
   background-color: var(--background-color);
 }
@@ -322,6 +330,7 @@ nav ul{
 .six_classes {
   padding: 1rem;
   row-gap: .5rem;
+  column-gap: .5rem;
 }
 
 .class_box {
@@ -330,9 +339,6 @@ nav ul{
   min-width: 300px;
   padding: 1rem 1rem 1.5rem 1rem;
   min-height: 3rem;
-}
-.class_box h4 {
-  font-size: 2rem;
 }
 
 /* --Thesis-- */
