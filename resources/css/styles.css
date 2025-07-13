@@ -2,51 +2,78 @@
     --text-color: #4a4a4a;  
     --mediumGrey-color: #d8d8d8;
     --lightGrey-color: #eaebec;
-    --background-color: #f3f5f5;
+    --background-color: #ffffff;
   }
-
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
-
 body {
-    text-align: center;
     color: var(--text-color);
     background-color: var(--background-color--);
+}
 
+    /* Fonts */
+.text {
+  margin: .5rem 0rem;
+  text-align: left;
+  padding-left: 1rem;
+}
 a {
-    color:var(--text-color);
-    text-decoration: none;
+  color:var(--text-color);
+  text-decoration: none;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  padding-top: 2rem;
+  margin: 0;
+}
+h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+h5 {
+  font-size: 1.0rem;
+  font-weight: 300;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;        /* go up and down? */
-/*------------------------EDITING PURPOSE ONLY*/border: 2px solid red;
+    flex-flow: column nowrap;        /* go up and down */
 }
 .horiz {
-  flex-flow: nowrap;        /* horizontal? */
-}
-
-img {
-/*------------------------EDITING PURPOSE ONLY*/height: 100px;
+  flex-direction: row;        /* over rides to horizontal*/
 }
 
 
 /*--Navigation bar and menu--*/
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 99;
-  padding: 0rem 0rem;
+  padding: 0rem;
+  margin: 0;
   font-size: 1rem;
   color: var(--text-color--);
 }
 
+  #colmar {
+    font-weight: 600;
+  }
+  #academy {
+    color: #9e9e9e;
+  }
+
   nav ul{   /*real box to play in */
+    margin: 0;
     display: flex;
     align-items: center;
     height: 4rem;
@@ -54,7 +81,6 @@ nav {
     font-size: 1rem;
     padding: 0rem 1.5rem;
     }
-
   nav li{    
     display: inline-block;
     margin: 0 0.5rem;  /* top and bottom | left and right */
@@ -67,7 +93,6 @@ nav {
     justify-content: center;
     align-items: center;
     flex-flow: nowrap;
-    border: 3px solid red;
   }
   #icon {
     height: 2rem;
@@ -79,45 +104,113 @@ nav {
     color: var(--text-color);
     transition: background-color 150ms ease;
   }
-  nav a:hover{
-    background-color: var(--hover-color);
-  }
-  nav a.active-link{
-    border-bottom: 2px solid var(--text-color);
-  }
 
-  .iconName {
-      z-index: 99;
-  }
-
-/*-- Jumbotron Section --*/
-.jumbotron {
+/*-- Banner Section --*/
+.banner {
   background-color: var(--mediumGrey-color);
 }
 
+.sixty_percent_box {
+  flex-shrink: 0;
+  width: 55%;
+  padding: 2rem 1.5rem;
+  align-content: start;
+  text-align: left;
+  align-items: flex-start;
+}
+.large_picture {
+  width: 100%;
+  height: auto;
+}
+
+.button_box {
+  background-color: var(--text-color);
+}
+#button_text {
+  color: var(--lightGrey-color);
+  margin: .5rem;
+}
+
+
 /*-- Highlighted Articles Section --*/
 .highlighted_articles {
+  display: flex;
+  align-items: flex-start;  /*align on top*/
 }
+.sixty_percent_box .text {
+  padding-left: 0;  
+}
+#author {
+  margin-bottom: .5rem;
+  font-size: .9rem;
+}
+.article div {
+  align-items: flex-start;
+  width: 65%;
+}
+.article img {
+  width: 35%;
+  height: auto;
+  margin: 0rem;
+  padding: 1rem 0rem 1rem 1rem;
+}
+.article a {
+  color: #6fa6e6;
+  font-weight: 600;
+}
+ .grey_background {
+  background-color: var(--mediumGrey-color);
+ }
 
 
 /*-- Available Classes Section --*/
 .available_classes {
-  background-color: var(--lightGrey-color);
-  
+  background-color: var(--lightGrey-color); 
 }
-
 .six_classes {
   flex-flow: row wrap;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin: 0;
+  padding: 2rem 4.5rem;
 }
-
+.class_box {
+  background-color: var(--background-color);
+  flex-grow: 1;
+  min-width: 16rem;
+  max-width: 16rem;
+  max-height: 17.5rem;
+  min-height: 17.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.class_box img {
+  width: 100%;
+  height: auto;
+}
 
 /*-- Thesis Exhibit Section --*/
-.thesis_exhibit {
-  
+.thesis_box {
+  padding: 0;
+  margin: 0;
 }
 
-
+#thesis_vid {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
 
 #footbar {
-  border-top: 1px solid var(--text-color);
+  border-top: 1px solid var(--mediumGrey-color);
+  font-size: .8rem;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  height: min-content;
+}
+footer .text {
+  margin-top: 0;
+  padding: 0;
 }
