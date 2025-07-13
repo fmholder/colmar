@@ -15,17 +15,20 @@
 <!-- Navigation Bar Section -->
   <nav>
     <ul id="topbar"> 
-      <li  class="home-li">
-          <div class="align-icon">
+      <li class="home-li">
+          <a href="index.html" class="align-icon">
               <img id="icon" src="resources/images/ic-logo.svg" href="index.html"/> 
-              <a href="index.html"><span id="colmar">COLMAR</span><span id="academy">ACADEMY</span></a>
-          </div>
+              <span  class="big_screen" id="colmar">COLMAR</span><span  class="big_screen" id="academy">ACADEMY</span>
+          </a>
       </li>
       
-      <li><a href="#Campus">On campus</a></li>
-      <li><a href="#Online">Online</a></li>
-      <li><a href="#Companies">For companies</a></li>
-      <li><a href="#SignIn">Sign In</a></li>
+      <li><a href="#Campus"><p class="big_screen">On campus</p>
+          <img class="small_screen nav_icon" src="resources/images/ic-on-campus.svg" href="index.html"/></a></li>
+      <li><a href="#Online"><p class="big_screen">Online</p>
+          <img class="small_screen nav_icon" src="resources/images/ic-online.svg" href="index.html"/></a></li>
+      <li id="company_link"><a href="#Companies"><p class="big_screen">For companies</p></a></li>
+      <li><a href="#SignIn"><p class="big_screen">Sign in</p>
+          <img class="small_screen nav_icon" src="resources/images/ic-login.svg" href="index.html"/></a></li>
     </ul>
   </nav>
 
@@ -34,24 +37,27 @@
   <div class="sixty_percent_box container"> 
     <img class="large_picture" src="resources/images/banner.jpg">
   </div>
-  <div class="container">
-    <h1>Learn something new everyday</h1>
-    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-    <a href="#StartButton" class="button_box container"><h3 id="button_text">Start here</h3></a>
-  </div>
+  <div class="left-align container">
+    <div class="button_text_box container">
+      <h1 class="under_pic text">Learn something new everyday</h1>
+      <h3 class="under_pic text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+      <a href="#StartButton" class="button_box container"><h3 id="button_text">Start here</h3></a>
+    </div>
+  </div>  
 </div>
 
 <!-- Highlighted Articles Section -->
 <div class="highlighted_articles container horiz">
-  <div class="sixty_percent_box container">
+  <div class="sixty_percent_box container big_screen">
     <img class="large_picture" src="resources/images/information-main.jpg"/> 
-    <h3 class="text">It doesn't hurt to keep practicing</h3>
-    <h5 class="text">Dolor sit amet consectetur adipisicing elit. Omnis facere voluptatem ullam dicta rerum ipsum eius, eligendi laborum incidunt consequatur exercitationem error quod tempora veniam? Pariatur corrupti illo obcaecati quibusdam.</h5>
+    <h3 class="under_pic text">It doesn't hurt to keep practicing</h3>
+    <h5 class="under_pic text">Dolor sit amet consectetur adipisicing elit. Omnis facere voluptatem ullam dicta rerum ipsum eius, eligendi laborum incidunt consequatur exercitationem error quod tempora veniam? Pariatur corrupti illo obcaecati quibusdam.</h5>
     <h5 id="author" class="text">Emanuel, Sr Strategist at Hiring.com</h5>
   </div>
-  <div class="container">
+  <div class="forty_percent_box container">
     <div class="article container horiz">
-      <img class="info_img" src="resources/images/information-orientation.jpg"/> 
+      <img class="big_screen" src="resources/images/information-orientation.jpg"/> 
+      <img class="small_screen" src="resources/images/information-orientation-mobile.jpg"/> 
       <div class="">
         <h4 class="text">Orientation date</h4>
         <h5 class="text">Tue 10/11 & Wed 10/12: 8am-3pm</h5>
@@ -59,7 +65,8 @@
       </div>
     </div>
     <div class="article container horiz">
-      <img class="art_img" src="resources/images/information-campus.jpg"/> 
+      <img class="big_screen" src="resources/images/information-campus.jpg"/> 
+      <img class="small_screen" src="resources/images/information-campus-mobile.jpg"/> 
       <div class="">
         <h4 class="text">Our campus</h4>
         <h5 class="text">Find which campus is close by you</h5>
@@ -67,7 +74,8 @@
       </div>
     </div>
     <div class="article container horiz grey_background">
-      <img class="art_img" src="resources/images/information-guest-lecture.jpg"/> 
+      <img class="big_screen" src="resources/images/information-guest-lecture.jpg"/> 
+      <img class="small_screen" src="resources/images/information-guest-lecture-mobile.jpg"/> 
       <div class="">
         <h4 class="text">Our guest lecture</h4>
         <h5 class="text">Join a keynote with Oliver Sack about music in medical treatment</h5>
@@ -77,45 +85,45 @@
   </div>
 </div>
 
-<!-- Available Classes Section -->
+<!-- Start Learning Section -->
 <div class="available_classes container">
   <h2>Start learning</h2>
   <div class="six_classes container">
     <div class="class_box container">
-      <img class="class_img" src="resources/images/course-software.jpg"/> 
+      <img class="class_img big_screen" src="resources/images/course-software.jpg"/> 
       <h4 class="text">Software engineering</h4>
-      <h5 class="text">COURSES</h5>
-      <h5 class="text">Web Development, Mobile Development, iOT, APIs</h5>
+      <h5 class="text big_screen">COURSES</h5>
+      <h5 class="text big_screen">Web Development, Mobile Development, iOT, APIs</h5>
     </div>
         <div class="class_box container">
-      <img class="class_img" src="resources/images/course-computer-art.jpg"/> 
+      <img class="class_img big_screen" src="resources/images/course-computer-art.jpg"/> 
       <h4  class="text">Computer art</h4 >
-      <h5  class="text">COURSES</h5 >
-      <h5  class="text">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h5 >
+      <h5  class="text big_screen">COURSES</h5 >
+      <h5  class="text big_screen">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h5 >
     </div>
     <div class="class_box container">
-      <img class="class_img" src="resources/images/course-design.jpg"/> 
+      <img class="class_img big_screen" src="resources/images/course-design.jpg"/> 
       <h4  class="text">Design</h4 >
-      <h5  class="text">COURSES</h5 >
-      <h5  class="text">User Experience Design, User Research, Visual Design</h5 >
+      <h5  class="text big_screen">COURSES</h5 >
+      <h5  class="text big_screen">User Experience Design, User Research, Visual Design</h5 >
     </div>
     <div class="class_box container">
-      <img class="class_img" src="resources/images/course-data.jpg"/> 
+      <img class="class_img big_screen" src="resources/images/course-data.jpg"/> 
       <h4  class="text">Data</h4 >
-      <h5  class="text">COURSES</h5 >
-      <h5  class="text">Data Science, Big Data, SQL, Data Visulization</h5 >
+      <h5  class="text big_screen">COURSES</h5 >
+      <h5  class="text big_screen">Data Science, Big Data, SQL, Data Visulization</h5 >
     </div>
     <div class="class_box container">
-      <img class="class_img" src="resources/images/course-business.jpg"/> 
+      <img class="class_img big_screen" src="resources/images/course-business.jpg"/> 
       <h4  class="text">Business</h4 >
-      <h5  class="text">COURSES</h5 >
-      <h5  class="text">Product Development, Business Development, Startup</h5 >
+      <h5  class="text big_screen">COURSES</h5 >
+      <h5  class="text big_screen">Product Development, Business Development, Startup</h5 >
     </div>
     <div class="class_box container">
-      <img class="class_img" src="resources/images/course-marketing.jpg"/> 
+      <img class="class_img big_screen" src="resources/images/course-marketing.jpg"/> 
       <h4  class="text">Marketing</h4 >
-      <h5  class="text">COURSES</h5 >
-      <h5  class="text">Analytics, Content Marketing, Mobile Marketing</h5 >
+      <h5  class="text big_screen">COURSES</h5 >
+      <h5  class="text big_screen">Analytics, Content Marketing, Mobile Marketing</h5 >
     </div>
   </div>
 </div>
@@ -126,10 +134,10 @@
   <div class="thesis_box container horiz">
   <div class="sixty_percent_box  main_thesis container">
     <video id="thesis_vid" src="resources/videos/thesis.mp4" mute controls loop></video> <!-- auto loop></video> --> 
-    <h4 class="text">Reimagine urban</h4>
-    <h5 class="text">Dolor sit amet consectetur adipisicing elit. Omnis facere voluptatem ullam dicta rerum ipsum eius, eligendi laborum incidunt consequatur exercitationem error quod tempora veniam? Pariatur corrupti illo obcaecati quibusdam.</h5>
+    <h4 class="text big_screen">Reimagine urban</h4>
+    <h5 class="text big_screen">Dolor sit amet consectetur adipisicing elit. Omnis facere voluptatem ullam dicta rerum ipsum eius, eligendi laborum incidunt consequatur exercitationem error quod tempora veniam? Pariatur corrupti illo obcaecati quibusdam.</h5>
   </div>
-  <div class="next_two_thesis container">
+  <div class="next_two_thesis container big_screen">
     <div class="article container horiz grey_background">
       <img class="thesis_img" src="resources/images/thesis-fisma.jpg"/> 
       <div class="container">
@@ -137,7 +145,7 @@
         <h5 class="text">Designer showcase of new protoype product</h5 >
       </div>
     </div>
-    <div class="article container horiz">
+    <div class="article container horiz big_screen">
       <img class="thesis_img" src="resources/images/thesis-now-and-then.jpg"/> 
       <div class="container">
         <h4 class="text">Now and then</h4>
@@ -153,10 +161,10 @@
   <footer>
     <nav>
       <ul id="footbar">
-        <li  class="home-li text">&copy Colmar Academy. All rights reserved</li>
+        <li  class="home-li text">&copy 2016 Colmar Academy. All rights reserved</li>
 
-        <li><a href="#Terms" class="text">Terms</a></li>
-        <li><a href="#Privacy" class="text">Privacy</a></li>
+        <li><a href="#Terms" class="text big_screen">Terms</a></li>
+        <li><a href="#Privacy" class="text big_screen">Privacy</a></li>
       </ul>
     </nav>
   </footer>

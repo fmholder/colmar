@@ -12,6 +12,9 @@ body {
     color: var(--text-color);
     background-color: var(--background-color--);
 }
+.small_screen {
+  display: none;
+}
 
     /* Fonts */
 .text {
@@ -56,6 +59,10 @@ h5 {
   flex-direction: row;        /* over rides to horizontal*/
 }
 
+.container2 {
+  border: 1px solid limegreen;
+}
+
 
 /*--Navigation bar and menu--*/
 nav {
@@ -64,7 +71,6 @@ nav {
   font-size: 1rem;
   color: var(--text-color--);
 }
-
   #colmar {
     font-weight: 600;
   }
@@ -73,11 +79,9 @@ nav {
   }
 
   nav ul{   /*real box to play in */
-    margin: 0;
     display: flex;
     align-items: center;
     height: 4rem;
-    padding: 0 1px;  
     font-size: 1rem;
     padding: 0rem 1.5rem;
     }
@@ -90,7 +94,7 @@ nav {
   }
   nav .align-icon{
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     flex-flow: nowrap;
   }
@@ -106,38 +110,51 @@ nav {
   }
 
 /*-- Banner Section --*/
+
 .banner {
   background-color: var(--mediumGrey-color);
 }
 
 .sixty_percent_box {
   flex-shrink: 0;
-  width: 55%;
+  width: 60%;
   padding: 2rem 1.5rem;
-  align-content: start;
-  text-align: left;
   align-items: flex-start;
 }
 .large_picture {
   width: 100%;
   height: auto;
 }
-
+.left-align {
+  align-items: flex-start;
+  padding: 1.5rem;
+}
 .button_box {
   background-color: var(--text-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  width: 100%;
+  height: 3.5rem;
 }
 #button_text {
   color: var(--lightGrey-color);
   margin: .5rem;
 }
-
+.button_text_box {
+  max-width: 80%;
+  align-items: flex-start;
+}
+.button_text_box .text {
+  padding: 0;
+}
 
 /*-- Highlighted Articles Section --*/
 .highlighted_articles {
   display: flex;
   align-items: flex-start;  /*align on top*/
 }
-.sixty_percent_box .text {
+.under_pic {
   padding-left: 0;  
 }
 #author {
@@ -163,7 +180,7 @@ nav {
  }
 
 
-/*-- Available Classes Section --*/
+/*-- Start Learning Section --*/
 .available_classes {
   background-color: var(--lightGrey-color); 
 }
@@ -214,3 +231,121 @@ footer .text {
   margin-top: 0;
   padding: 0;
 }
+
+/* ----------RESPONSIVE PART ---------- */
+/*  mobile only, 480px  */
+
+@media only screen and (max-width: 680px) {
+.big_screen {
+  display: none;
+}
+.small_screen {
+  display: flex;
+}
+h2 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.horiz {
+  display: flex;
+  flex-direction: column;        /* over rides to horizontal*/
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+
+/* --Nav bar-- */
+#company_link {
+  display: none;
+}
+.nav_icon {
+  height: 2.25rem;
+  width: auto;
+}
+#icon {
+  height: 2.25rem;
+  width: auto;
+}
+nav .home-li{
+  margin-right: 0;
+}
+nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* --Banner-- */
+.sixty_percent_box {
+  flex-shrink: 0;
+  width: 100%;
+  padding: 0;
+
+}
+.sixty_percent_box .text {
+  padding-left: 1rem;
+}
+.under_pic {
+  padding-left: 1rem;
+}
+.button_text_box {  
+  min-width: 99%;
+}
+.button_box {
+  background-color: #9b9b9b;
+}
+.forty_percent_box {
+  min-width: 100%
+}
+
+/* --Articles-- */
+.article {
+  min-width: 100%;
+  padding-bottom: 4rem;
+}
+.article img {
+  height: 12.75rem;
+  width: auto;
+}
+.grey_background {
+  background-color: var(--background-color);
+}
+
+/* --Start Learning-- */
+.available_classes {
+  background-color: var(--background-color);
+  padding-bottom: 2rem;
+  border-top: 2px solid var(--lightGrey-color);
+  border-bottom: 2px solid var(--lightGrey-color);
+}
+.six_classes {
+  padding: 1rem;
+  row-gap: .5rem;
+}
+
+.class_box {
+  background-color: #d8d8d8;
+  max-width: 460px;
+  min-width: 300px;
+  padding: 1rem 1rem 1.5rem 1rem;
+  min-height: 3rem;
+}
+.class_box h4 {
+  font-size: 2rem;
+}
+
+/* --Thesis-- */
+.thesis_exhibit {
+  padding-bottom: 1.5rem;
+}
+
+/* --Footer-- */
+#footbar {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+} /*end react to mobile*/
